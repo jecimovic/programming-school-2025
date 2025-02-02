@@ -16,16 +16,28 @@ public class App {
         System.out.println(new App().getGreeting());
         System.out.println(new App().getsadGreeting());
         
-        for (int x = 0; x<=100;x++){
-            System.out.println (x);
-        }
-
         int series=0;
+        int seriesodd = 0;
+        int serieseven = 0;
+
+        for (int number = 100; number<=0; number-=1){
+            System.out.println ("NUMBERO "+number);
+        }
 
         for (int i = 0; i<=100;i++){
             series+=i;
         }
 
+        for (int i = 1; i<=99;i+=2){
+            seriesodd+=i;
+        }
+
+        for (int i = 0; i<=100;i+=2){
+            serieseven+=i;
+        }
+
         System.out.println(series);
+        System.out.println("odd sum = "+seriesodd);
+        System.out.println("even sum = "+serieseven);
     }
 }

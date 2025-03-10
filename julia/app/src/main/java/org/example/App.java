@@ -19,8 +19,9 @@ public class App {
         int series=0;
         int seriesodd = 0;
         int serieseven = 0;
+        double geoseiro = 1.1;
 
-        for (int number = 100; number<=0; number-=1){
+        for (int number = 100; number>=0; number-=1){
             System.out.println ("NUMBERO "+number);
         }
 
@@ -35,6 +36,12 @@ public class App {
         for (int i = 0; i<=100;i+=2){
             serieseven+=i;
         }
+
+        for (int e = 1; e<=100; e++){
+            System.out.println("X["+e+"]= "+geoseiro);
+          geoseiro*=1.01;  
+        } 
+
 
         System.out.println(series);
         System.out.println("odd sum = "+seriesodd);

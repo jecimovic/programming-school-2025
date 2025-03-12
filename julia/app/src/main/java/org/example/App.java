@@ -21,6 +21,9 @@ public class App {
         int serieseven = 0;
         double geoseiro = 1.1;
         double geosum = 0;
+        double geoseirio = 0.5;
+        double geosuim = 0;
+        byte x = 0;
 
         for (int number = 100; number>=0; number-=1){
             System.out.println ("NUMBERO "+number);
@@ -44,10 +47,19 @@ public class App {
            geosum += geoseiro;
         } 
 
+        for (int e = 1; e<=1000; e++){
+            System.out.println("X["+e+"]= "+geoseirio);
+          geosuim += geoseirio;
+          geoseirio*=0.5; 
+           
+        } 
+
+
 
         System.out.println(series);
         System.out.println("odd sum = "+seriesodd);
         System.out.println("even sum = "+serieseven);
         System.out.println("geosum = "+geosum);
+        System.out.println("geosum 2 = "+geosuim);
     }
 }

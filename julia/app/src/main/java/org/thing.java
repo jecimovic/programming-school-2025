@@ -88,6 +88,26 @@ public class thing {
         }
 
         printarray(darray);
+
+        System.out.println("blocker blocker yayaya");
+
+        int placeholder = 0;
+        int e = 9;
+
+        for  (int q = 0; q<=9;q++){
+            if(arrarray[q]%2==0){
+
+            }else{
+                placeholder=arrarray[q];
+                while(e>q && arrarray[e]%2!=0){
+                    e--;
+                }
+                arrarray[q]=arrarray[e];
+                arrarray[e] = placeholder;
+            }
+        }
+
+        printarray(arrarray);
         
         
 

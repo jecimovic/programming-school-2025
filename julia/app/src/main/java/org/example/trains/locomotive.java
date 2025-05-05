@@ -5,4 +5,7 @@ public class locomotive extends rollingstock {
     int amountofcoal;
     int coalpermileratio;
     int loadcapacityweight;
+    public locomotive(){
+        this.ispowered=true;
+    }
 }
